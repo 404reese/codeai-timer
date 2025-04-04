@@ -121,11 +121,16 @@ body {
 
 .announcement-container {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  display: inline-flex;
+  justify-content: center;
   align-items: center;
-  gap: 5px;
-  width: 60%;
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid rgba(128, 128, 128, 0.8);
+  border-radius: 10px;
+  padding: 20px 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  max-width: 80%;
+  min-width: 40%;
 }
 
 .announcement-image {
@@ -133,19 +138,14 @@ body {
 }
 
 .announcement-text {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3rem;
-  font-family: "MinecraftAlt", sans-serif;
+  position: static;
+  transform: none;
+  font-size: 2.5rem;
   color: white;
   padding: 10px 20px;
-  border-radius: 10px;
-  z-index: 3;
-  width: 90%;
+  width: auto;
   text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: visible;
+  word-wrap: break-word;
 }

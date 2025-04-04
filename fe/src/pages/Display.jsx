@@ -86,7 +86,6 @@ const Display = () => {
 
         {/* Announcement */}
         <div className="announcement-container">
-          <img src="/ann-final.png" alt="Announcement" className="announcement-image" />
           <div className="announcement-text">{announcement}</div>
         </div>
       </div>
